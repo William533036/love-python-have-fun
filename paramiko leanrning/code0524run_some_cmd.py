@@ -57,7 +57,7 @@ class InteractToServer:
 
 
 if __name__ == '__main__':
-    terminal = InteractToServer(host="192.168.1.115", port=22,username='root', pwd='huawei011')
+    terminal = InteractToServer(host="192.168.1.115", port=22,username='root', pwd="")
     cmd = ('ls','anaconda' )
     terminal.send_cmd(cmd)
     cmd = ('cd /home','home' )
