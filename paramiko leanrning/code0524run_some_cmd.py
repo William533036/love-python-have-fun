@@ -43,12 +43,11 @@ class InteractToServer:
             time.sleep(0.2)
             rst = self.channel.recv(1024)
             rst = rst.decode('utf-8')
-            print("+++++++++")
+            print("{:+^100}".format(cmd_result_tuple[0]))
             print(rst)
-            print("+++++++++")
+            print("{:+^100}".format(cmd_result_tuple[0]))
             # 通过命令执行提示符来判断命令是否执行完成
             if cmd_result_tuple[1] in rst:
-                # self.channel.send('yes\r')  # 【坑3】 如果你使用绝对路径，则会在home路径建立文件夹导致与预期不符
                 break
 
     def close_connection(self):
@@ -57,7 +56,8 @@ class InteractToServer:
 
 
 if __name__ == '__main__':
-    terminal = InteractToServer(host="192.168.1.115", port=22,username='root', pwd="")
+    from security import *
+    terminal = InteractToServer(host=host, port=port, username=username, pwd=pwd)
     cmd = ('ls','anaconda' )
     terminal.send_cmd(cmd)
     cmd = ('cd /home','home' )
