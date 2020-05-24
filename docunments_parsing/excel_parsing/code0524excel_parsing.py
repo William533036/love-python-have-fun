@@ -19,17 +19,17 @@ class ExcelParsing:
         self._filepath = filepath
         self.workbook = load_workbook(self._filepath).active
 
-    def get_cols(self, only=True):
+    def get_cols(self,min_col=None, max_col=None, only=True):
         self.cols = []
-        for col in self.workbook.iter_cols(values_only=only):
+        for col in self.workbook.iter_cols(min_col=min_col, max_col=max_col, values_only=only):
             col_cells = []
             for cell in col:
                 col_cells.append(cell)
             self.cols.append(col_cells)
 
-    def get_rows(self, only=True):
+    def get_rows(self,min_row=None, max_row=None, only=True):
         self.rows = []
-        for row in self.workbook.iter_rows(values_only=only):
+        for row in self.workbook.iter_rows(min_row=min_row, max_row=max_row, values_only=only):
             row_cells = []
             for cell in row:
                 row_cells.append(cell)
