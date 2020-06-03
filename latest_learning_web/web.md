@@ -12,3 +12,5 @@
 |      | 一个在线的可视化生成 Markdown 表格的网站                      |
 | 9    | https://www.tablesgenerator.com/markdown_tables               |
 | 10   | https://tool.lu/index.php/tables/                             |
+| 10   | unicode中文互转				                               |
+| 11   | https://www.bejson.com/convert/unicode_chinese                |
