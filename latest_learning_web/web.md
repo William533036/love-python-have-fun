@@ -7,3 +7,5 @@ https://pypi.org/project/openssh-wrapper/
 https://www.cnblogs.com/php12-cn/p/8575188.html
 jenkins python api接口调用方式
 https://www.jianshu.com/p/56d312eb9dee
+一个在线的可视化生成 Markdown 表格的网站
+https://www.tablesgenerator.com/markdown_tables
