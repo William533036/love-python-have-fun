@@ -1,0 +1,3 @@
+port: = 50022
+forwardx11: = no
+
