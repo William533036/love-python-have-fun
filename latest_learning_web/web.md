@@ -29,3 +29,5 @@
 |      | Python Jinja2的简单使用                                                       |
 | 17   | https://www.cnblogs.com/owasp/p/12932079.html                                |
 | 18   | https://cloud.tencent.com/developer/article/1639212                          |
+| 19   | 首页劫持修复                                                                  |
+| 19   | https://jingyan.baidu.com/article/d169e186727470436611d883.html              |
