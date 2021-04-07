@@ -49,7 +49,7 @@ class ExcelParsing:
         pass
 
 if __name__ == '__main__':
-    excel = ExcelParsing(r"E:\Program\Python\文本处理\test.xlsx", sheet_names=['cool', 'rename', 'cool Copy'])
+    excel = ExcelParsing("")
     cols=excel.get_cols()
     print(cols)
     print(excel.resutl)
