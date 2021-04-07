@@ -21,6 +21,8 @@ class ExcelParsing:
         self.wb = load_workbook(self._filepath)
         self.workbook = self.wb.active
         if sheet_names:
+            if sheet_names == "all":
+                sheet_names = self.wb.sheetnames
             for sheet_name in sheet_names:
                 self.workbook = self.wb[sheet_name]
                 self.resutl[sheet_name]=self.get_cols()
@@ -47,7 +49,9 @@ class ExcelParsing:
         pass
 
 if __name__ == '__main__':
-    excel = ExcelParsing("")
+    excel = ExcelParsing(r"E:\Program\Python\文本处理\test.xlsx", sheet_names=['cool', 'rename', 'cool Copy'])
     cols=excel.get_cols()
     print(cols)
     print(excel.resutl)
+    cols=excel.get_cols()
+    print(cols)
