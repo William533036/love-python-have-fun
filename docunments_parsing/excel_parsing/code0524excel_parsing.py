@@ -15,30 +15,39 @@
 from openpyxl import load_workbook
 
 class ExcelParsing:
-    def __init__(self,filepath):
+    def __init__(self,filepath, sheet_names=None):
         self._filepath = filepath
-        self.workbook = load_workbook(self._filepath).active
+        self.resutl = {}
+        self.wb = load_workbook(self._filepath)
+        self.workbook = self.wb.active
+        if sheet_names:
+            for sheet_name in sheet_names:
+                self.workbook = self.wb[sheet_name]
+                self.resutl[sheet_name]=self.get_cols()
 
     def get_cols(self,min_col=None, max_col=None, only=True):
-        self.cols = []
+        cols = []
         for col in self.workbook.iter_cols(min_col=min_col, max_col=max_col, values_only=only):
             col_cells = []
             for cell in col:
                 col_cells.append(cell)
-            self.cols.append(col_cells)
+            cols.append(col_cells)
+        return cols
 
     def get_rows(self,min_row=None, max_row=None, only=True):
-        self.rows = []
+        rows = []
         for row in self.workbook.iter_rows(min_row=min_row, max_row=max_row, values_only=only):
             row_cells = []
             for cell in row:
                 row_cells.append(cell)
-            self.rows.append(row_cells)
+            rows.append(row_cells)
+        return rows
 
     def save_files(self):
         pass
 
 if __name__ == '__main__':
     excel = ExcelParsing("")
-    excel.get_cols()
-    print(excel.cols)
+    cols=excel.get_cols()
+    print(cols)
+    print(excel.resutl)
