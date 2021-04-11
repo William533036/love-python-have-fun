@@ -1,0 +1,94 @@
+{
+  "uid" : "adece1bd41aa2450",
+  "name" : "test_01_demo[c1]",
+  "fullName" : "code2021-4-11.TestDemo#test_01_demo",
+  "historyId" : "d50e5c2f18c7b407c00b6de65c44681d",
+  "time" : {
+    "start" : 1618153147084,
+    "stop" : 1618153147084,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "demo_fixture",
+    "time" : {
+      "start" : 1618153147084,
+      "stop" : 1618153147084,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "demo_fixture::0",
+    "time" : {
+      "start" : 1618153147085,
+      "stop" : 1618153147085,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "code2021-4-11"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDemo"
+  }, {
+    "name" : "host",
+    "value" : "SC-201811300146"
+  }, {
+    "name" : "thread",
+    "value" : "14252-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "code2021-4-11"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "demo_fixture",
+    "value" : "'成龙'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ae3536b17f807d8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618153101586,
+        "stop" : 1618153101586,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "adece1bd41aa2450.json",
+  "parameterValues" : [ "'成龙'" ]
+}

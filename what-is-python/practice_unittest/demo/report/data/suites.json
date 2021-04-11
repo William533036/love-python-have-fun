@@ -1,0 +1,65 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "code2021-4-11",
+    "children" : [ {
+      "name" : "TestDemo",
+      "children" : [ {
+        "name" : "test_01_demo[c1]",
+        "uid" : "adece1bd41aa2450",
+        "parentUid" : "bc5c5f557714f7c829457ebecc90bae6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618153147084,
+          "stop" : 1618153147084,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'成龙'" ]
+      }, {
+        "name" : "test_01_demo[zzd]",
+        "uid" : "fe6e8b1b7915113c",
+        "parentUid" : "bc5c5f557714f7c829457ebecc90bae6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618153147088,
+          "stop" : 1618153147089,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'甄子丹'" ]
+      }, {
+        "name" : "test_01_demo[c10]",
+        "uid" : "237f9d4fdc61d78d",
+        "parentUid" : "bc5c5f557714f7c829457ebecc90bae6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618153147092,
+          "stop" : 1618153147092,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'菜10'" ]
+      }, {
+        "name" : "test_02_demo",
+        "uid" : "66cbdc9a8ff0ceee",
+        "parentUid" : "bc5c5f557714f7c829457ebecc90bae6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618153147096,
+          "stop" : 1618153147096,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bc5c5f557714f7c829457ebecc90bae6"
+    } ],
+    "uid" : "f684f5e4e33eb4fceac08cffcc7edb6a"
+  } ]
+}
