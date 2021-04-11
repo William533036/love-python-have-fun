@@ -147,13 +147,13 @@ pytest -vs -m "test" **--html=./demo.html**
 
 ```ini
 [pytest]
-addopts = -vs
+addopts = -vs --alluredir  ./temp
 testpath = ./
 python_files = code*.py
 python_classes = Test*
 python_functions = test
 markers =
-   test:我的测试
+	test:我的测试
 ```
 
 
